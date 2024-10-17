@@ -3,3 +3,5 @@ sys
 os
 numpy
 scikit-learn
+seaborn
+matplotlib
