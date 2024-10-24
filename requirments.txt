@@ -7,3 +7,5 @@ seaborn
 matplotlib
 ipaddress
 scikit-learn
+shap
+mlflow
