@@ -6,3 +6,8 @@ IpAddress_to_Country.csv
 encoded_data.csv
 encoded_data1.csv
 mlruns
+gb_clf
+log_reg_credit
+log_reg_fraud
+mlp_clf
+rf_credit
