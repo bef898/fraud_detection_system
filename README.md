@@ -1,4 +1,4 @@
-### fraud_detection_system
+# fraud_detection_system
 ## A comprehensive fraud detection system for identifying and visualizing fraudulent transactions.
 ### Project Overview
 
@@ -20,7 +20,7 @@ Usage
 Future Improvements
 
 
-##Project Structure
+# Project Structure
 fraud_detection_system/
 ├── data/                     # Folder containing fraud data CSV files
 ├── fraud_dashboard/          # Folder for Flask + Dash dashboard
@@ -34,50 +34,50 @@ fraud_detection_system/
 └── README.md                 # Project documentation
 
 
-## Installation
-# Clone the Repository:
+# Installation
+## Clone the Repository:
 
 git clone https://github.com/yourusername/fraud-detection-system.git
 cd fraud-detection-system
-# Set Up a Virtual Environment:
+### Set Up a Virtual Environment:
 python -m venv myvenv
 source myvenv/bin/activate  # On Windows: myvenv\Scripts\activate
-# Install Dependencies:
+### Install Dependencies:
 pip install -r requirements.txt
 Prepare Data: Ensure you have the fraud_data.csv file in the data folder.
 
-### Data Preparation and Model Training
-## Task 1: Data Analysis and Preprocessing
+# Data Preparation and Model Training
+### Task 1: Data Analysis and Preprocessing
 Handle missing values, clean data, perform EDA, and engineer features for optimal performance.
 Merge IP data to include geographic insights.
 Normalize and encode data for machine learning compatibility.
-## Task 2: Model Building and Training
+### Task 2: Model Building and Training
 Models Used: Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, MLP, CNN, RNN, and LSTM.
 Experiment Tracking: MLflow is used to track experiments, log metrics, and manage model versions.
 Results: Gradient Boosting and Random Forest showed the best performance, selected for deployment.
 
-### Model Explainability
-## Task 3: Model Explainability with SHAP and LIME
+# Model Explainability
+### Task 3: Model Explainability with SHAP and LIME
 SHAP: Used for feature importance, force, and dependence plots to visualize global and local feature contributions.
 LIME: Generates local explanations to make individual fraud predictions interpretable.
 Run SHAP and LIME by following the instructions in the dashboard.py file to visualize feature importance and interpret predictions.
 
-### API and Deployment
-# Task 4: Flask API for Fraud Detection
+# API and Deployment
+### Task 4: Flask API for Fraud Detection
 # API Setup:
 
 The Flask app (app.py) serves fraud predictions and summary data via endpoints.
 Endpoints:
 /api/summary: Provides summary statistics of fraud cases.
 /api/fraud_over_time: Serves time-series data of fraud cases.
-# Docker Deployment:
+## Docker Deployment:
 
 Build and run the Flask API within a Docker container:
 docker build -t fraud-detection-api .
 docker run -p 5000:5000 fraud-detection-api
 Access the API at http://127.0.0.1:5000.
 
-### Dashboard
+# Dashboard
 ## Task 5: Interactive Dashboard with Flask and Dash
 ## Dashboard Components:
 
